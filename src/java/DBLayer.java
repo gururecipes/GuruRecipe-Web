@@ -63,13 +63,8 @@ public class DBLayer {
         try {
             Statement stmt = conn.createStatement();
             String sql = "INSERT INTO MAIN "+"VALUES ('"+name+"','"+password+"')";
-
             stmt.executeUpdate(sql);
             System.out.println("executed successfully!");
-            //stmt.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'Simpson', 'Mr.', 'Springfield', 2001)");
-           // PreparedStatement pstmt = conn.prepareStatement(sql);
-         
-           
             stmt.close();
         }catch (SQLException e) {
             System.out.println(e.getMessage());
