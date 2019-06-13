@@ -1,4 +1,3 @@
-<%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 
 <html>
@@ -7,7 +6,7 @@
     <title>LOGIN</title>
     </head>
     <body>
-    <center> <h1><u> Please Login Guru</u></h1> </center> 
+    <center> <h1><u> Please Try Again</u></h1> </center> 
     <center>
         <div>
             <form action="login" method="POST">
@@ -24,15 +23,8 @@
                         <td colspan="2" style="text-align: center"><input class="btn btn-success" type="submit" value="Login"</td>
                     </tr>
                     
-                </table>                 
+                </table>
             </form>
-            <form action="signUser.jsp" method="POST">
-                <tr>
-                    <td colspan="2" style="text-align: left"><input class="btn btn-success" type="submit" value="Sign Up Guru!"</td>
-                </tr>                
-                
-            </form>
-
         </div>
     </center>
     </body>

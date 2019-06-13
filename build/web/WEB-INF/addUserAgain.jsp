@@ -1,4 +1,3 @@
-<%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 
 <html>
@@ -7,32 +6,25 @@
     <title>LOGIN</title>
     </head>
     <body>
-    <center> <h1><u> Please Login Guru</u></h1> </center> 
+    <center> <h1><u> Please Try Again</u></h1> </center> 
     <center>
         <div>
-            <form action="login" method="POST">
+            <form action="signUser" method="POST">
                 <table>
                     <tr>
-                        <td>UserName</td>
+                        <td>Enter UserName</td>
                         <td><input type="text" class="form-control" name="username" placeholder="UserName"></td>
                     </tr>
                     <tr>
-                        <td>Password</td>
+                        <td>Enter Password</td>
                         <td><input type="password" class="form-control" name="password" placeholder="password"></td>                         
                     </tr>
                     <tr>
-                        <td colspan="2" style="text-align: center"><input class="btn btn-success" type="submit" value="Login"</td>
+                        <td colspan="2" style="text-align: center"><input class="btn btn-success" type="submit" value="Sign up"</td>
                     </tr>
                     
-                </table>                 
+                </table>
             </form>
-            <form action="signUser.jsp" method="POST">
-                <tr>
-                    <td colspan="2" style="text-align: left"><input class="btn btn-success" type="submit" value="Sign Up Guru!"</td>
-                </tr>                
-                
-            </form>
-
         </div>
     </center>
     </body>

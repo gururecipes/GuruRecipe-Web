@@ -1,0 +1,561 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Yemek</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel='stylesheet' href='css/settings.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/pe-icon-7-stroke.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/prettyPhoto.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/custom.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='all' />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+   
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    
+</head>
+<body>
+    <div class="noo-spinner">
+        <div class="spinner">
+            <div class="child double-bounce1"></div>
+            <div class="child double-bounce2"></div>
+        </div>
+    </div>
+    <div id="cms-page" class="cs-wide header-default header-ontop clearfix">
+        <div id="cms-header-wrapper" class="clearfix">
+            <div id="cms-search" class="clearfix">
+                <div class="cms-search-inner container">
+                    <div class="cms-search-content">
+                        <form>
+                            <div class="row">
+                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 nopaddingright">
+                                    <input type="text" value="" name="s" placeholder="Arama metnini giriniz" autofocus />
+                                </div>
+                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 padsil">
+                                    <input class="btn btn-primary btn-block submit nopaddingleft nopaddingright" type="submit" value="ARAMA" />
+                                </div>
+                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-right">
+                                    <a id="header-widget-search-close">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- #search -->
+            <header id="masthead" class="site-header header-default header-onepage clearfix">
+                <div id="cms-header" class="cms-header header-default has-sticky sticky-tablets sticky-mobile clearfix">
+                    <div class="container">
+                        <div id="cms-header-logo" class="main-navigation pull-left">
+                            <a href="index.html">
+                                <img alt="" id="logox" src="images/f27.food">
+                            </a>
+                        </div>
+                        <div id="cms-nav-extra" class="cms-nav-extra main-navigation pull-right">
+                            <div class="pull-left"></div>
+                            <div class="pull-left">
+                                <ul>
+                                    <li>
+                                        <a id="header-widget-search"><i class="fa fa-search"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="cms-menu-mobile" class="pull-left">
+                                <ul>
+                                    <li>
+                                        <a><i class="fa fa-bars"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="cms-header-navigation" class="cms-header-navigation">
+                            <nav id="site-navigation" class="main-navigation clearfix">
+                                <div class="cms-menu pull-right">
+                                    <div class="menu-one-page-container">
+                                        <ul class="nav-menu">
+                                            <li class="current_page_item"><a href="#main">ANASAYFA</a></li>
+                                            <li class="menu-item-has-children"><a href="#anayemekler">ANA YEMEKLER</a></li>
+                                            <li class="menu-item-has-children"><a href="#tatli">TATLI</a></li>
+                                            <li class="menu-item-has-children"><a href="#">KURABİYE</a></li>
+                                            <li class="menu-item-has-children"><a href="#">KAHVALTI</a></li>
+                                            <li class="menu-item-has-children"><a href="#">YEMEK TARİFLERİ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <form action="addRecipe" method="POST">
+                <table>
+                    <tr>
+                        <td colspan="2" style="text-align: center"><input class="btn btn-success" type="submit" value="Tarif Ekle"</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="main" class="main clearfix">
+            <div class="section">
+                <div class="no-container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="rev_slider_wrapper">
+                                <div id="rev_slider_1_1" class="rev_slider">
+                                    <ul>
+                                        <!-- SLIDE  -->
+                                        <li data-transition="crossfade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
+                                            <img src="images/slide-1.jpg" alt=""
+                                                 data-bgposition="center top"
+                                                 data-bgfit="cover"
+                                                 data-bgrepeat="no-repeat" />
+                                        </li>
+                                        <li data-transition="crossfade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
+                                            <img src="images/slide-2.jpg" alt=""
+                                                 data-bgposition="center top"
+                                                 data-bgfit="cover"
+                                                 data-bgrepeat="no-repeat" />
+
+                                        </li>
+                                        <li data-transition="crossfade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
+                                            <img src="images/slide-3.jpg" alt=""
+                                                 data-bgposition="center top"
+                                                 data-bgfit="cover"
+                                                 data-bgrepeat="no-repeat" />
+
+                                        </li>
+                                    </ul>
+                                    <div class="tp-bannertimer tp-bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            
+            <div id="anayemekler" class="section section-our-team no-border mb-10">
+                <div class="container">
+                    <div class="row">
+                        <div data-wow-delay="0.3s" class="col-sm-12 wow fadeInUp">
+                            <h1 class="text-center mb-7">ANA YEMEKLER</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cms-grid-wraper cms-grid-team">
+                            <div class="cms-grid cms-grid">
+                                <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                                    <a href="ic-pilavli-tavuk-dolmasi.html">
+                                        <div class="cms-grid-media has-thumbnail">
+                                            <img width="300" height="300" src="images/ic-pilavli-tavuk-dolmasi.jpg" alt="" />
+                                        </div>
+                                        <h4 class="cms-grid-title"><b>Fırında İç Pilavlı Tavuk Dolması Tarifi (5 Kişilik)</b> </h4>
+                                        <div class="cms-grid-team-position">
+                                            Detayı Gör
+                                        </div>
+                                    </a>
+                                </div>
+                                <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                                    <a href="parmak-kebabi.html">
+                                        <div class="cms-grid-media has-thumbnail">
+                                            <img width="300" height="300" src="images/parmak-kebabi.jpg" alt="" />
+                                        </div>
+                                        <h4 class="cms-grid-title"><b>Parmak Kebabı Tarifi (3 Kişilik)</b></h4>
+                                        <div class="cms-grid-team-position">
+                                            Detayı Gör
+                                        </div>
+                                    </a>
+                                </div>
+                                <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                                    <a href="#">
+                                        <div class="cms-grid-media has-thumbnail">
+                                            <img width="300" height="300" src="images/mercan-kebabi.jpg" alt="" />
+                                        </div>
+                                        <h4 class="cms-grid-title"><b>Mercan Kebabı Tarifi (18 Adet)</b> </h4>
+                                        <div class="cms-grid-team-position">Detayı Gör</div>
+                                    </a>
+                                </div>
+                                <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                                    <a href="#">
+                                        <div class="cms-grid-media has-thumbnail">
+                                            <img width="300" height="300" src="images/bohca-kebabi-manisa-kebabi.jpg" alt="" />
+                                        </div>
+                                        <h4 class="cms-grid-title"><b> Bohça Kebabı Tarifi (Manisa Kebabı) (5 Kişilik)</b> </h4>
+                                        <div class="cms-grid-team-position">Detayı Gör</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tatli" class="section pt-2 text-center">
+                <div class="container">
+                    <div class="row">
+                        <div data-wow-delay="0.3s" class="col-sm-12 wow fadeInUp">
+                            <h1>TATLI</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="cms-grid-wraper cms-grid-blog">
+                                <div class="row cms-grid multiple-items">
+                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
+                                            <img width="370" height="250" src="images/findikli-keskul.jpg" alt="" />
+                                            <div class="overlay">
+                                                <div class="overlay-content">
+                                                    <a class="icon circle" href="findikli-keskul.html">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                    <a class="icon circle prettyphoto" href="images/findikli-keskul.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="cms-grid-title">
+                                           <b>Fındıklı Keşkül Tarifi (5 Kişilik)</b>
+                                        </h4>
+                                        <div class="cms-grid-link">
+                                            <a class="more-link" href="findikli-keskul.html">Detayı Gör &rarr;</a>
+                                        </div>
+                                    </div>
+                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
+                                            <img width="370" height="250" src="images/hashasli-revani.jpg" alt="" />
+                                            <div class="overlay">
+                                                <div class="overlay-content">
+                                                    <a class="icon circle" href="#">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                    <a class="icon circle prettyphoto" href="images/hashasli-revani.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="cms-grid-title">
+                                           <b>Haşhaşlı Revani Tatlısı Tarifi (10 Kişilik)</b>
+                                        </h4>
+                                        <div class="cms-grid-link">
+                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
+                                        </div>
+                                    </div>
+                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
+                                            <img width="370" height="250" src="images/pastane-usulu-ekler.jpg" alt="" />
+                                            <div class="overlay">
+                                                <div class="overlay-content">
+                                                    <a class="icon circle" href="#">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                    <a class="icon circle prettyphoto" href="images/pastane-usulu-ekler.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="cms-grid-title">
+                                            <b>Pastane Usulü Ekler Pasta Tarifi (15 Kişilik)</b>
+                                        </h4>
+                                        <div class="cms-grid-link">
+                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
+                                        </div>
+                                    </div>
+                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
+                                            <img width="370" height="250" src="images/cikolatali-muhallebili-pasta.jpg" alt="" />
+                                            <div class="overlay">
+                                                <div class="overlay-content">
+                                                    <a class="icon circle" href="#">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                    <a class="icon circle prettyphoto" href="images/cikolatali-muhallebili-pasta.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="cms-grid-title">
+                                            <b>Çikolatalı Muhallebili Pasta Tarifi (10 Kişilik)</b>
+                                        </h4>
+                                        <div class="cms-grid-link">
+                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
+                                        </div>
+                                    </div>
+                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
+                                            <img width="370" height="250" src="images/pastane-usulu-profiterol.jpg" alt="" />
+                                            <div class="overlay">
+                                                <div class="overlay-content">
+                                                    <a class="icon circle" href="#">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                    <a class="icon circle prettyphoto" href="images/pastane-usulu-profiterol.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="cms-grid-title">
+                                            <a href="#"><b>Pastane Usulü Profiterol Tarifi (10 Kişilik)</b> </a>
+                                        </h4>
+                                        <div class="cms-grid-link">
+                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
+                                        </div>
+                                    </div>
+                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
+                                            <img width="370" height="250" src="images/gelin-pastasi.jpg" alt="" />
+                                            <div class="overlay">
+                                                <div class="overlay-content">
+                                                    <a class="icon circle" href="#">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                    <a class="icon circle prettyphoto" href="images/gelin-pastasi.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="cms-grid-title">
+                                            <a href="#"><b>Gelin Pastası Tarifi (8 Kişilik)</b></a>
+                                        </h4>
+                                        <div class="cms-grid-link">
+                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
+                                        </div>
+                                    </div>
+                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
+                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
+                                            <img width="370" height="250" src="images/magnolia.jpg" alt="" />
+                                            <div class="overlay">
+                                                <div class="overlay-content">
+                                                    <a class="icon circle" href="#">
+                                                        <i class="fa fa-link"></i>
+                                                    </a>
+                                                    <a class="icon circle prettyphoto" href="images/magnolia.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h4 class="cms-grid-title">
+                                            <a href="#"><b>Magnolia Tarifi (6 Kişilik)</b> </a>
+                                        </h4>
+                                        <div class="cms-grid-link">
+                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- #main -->
+        <footer id="footer-wrapper" class="footer-bottom-layout-1">
+            <div id="cms-footer-bottom" class="layout-1">
+                <div class="footer-social footer-bottom-3">
+                    <div class="container">
+                        <div data-wow-delay="0.3s" class="cms-social-sc wow fadeInUp">
+                            <a href="#" class="fa fa-facebook" title="Facebook"></a>
+                            <a href="#" class="fa fa-twitter" title="Twitter"></a>
+                            <a href="#" class="fa fa-instagram" title="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <div data-wow-delay="0.3s" class="footer-copyright footer-bottom-2 col-xs-12 col-sm-12 col-md-12 col-lg-12 wow fadeInUp">
+                            <div class="cms-copyright pt-1">
+                                <p style="color: white; text-align: left;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- #footer-wrapper -->
+    </div><!-- #page -->
+
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='js/jquery.themepunch.tools.min.js'></script>
+    <script type='text/javascript' src='js/jquery.themepunch.revolution.min.js'></script>
+    <script type='text/javascript' src='js/bootstrap.min.js'></script>
+    <script type='text/javascript' src="js/wow.min.js"></script>
+    <script type='text/javascript' src='js/jquery.parallax-1.1.3.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+    <script type='text/javascript' src='js/mobile-menu.js'></script>
+    <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+    <script type='text/javascript' src='js/waypoints.min.js'></script>
+    <script type='text/javascript' src='js/modernizr.min.js'></script>
+    <script type='text/javascript' src='js/jquery.imagesloaded.js'></script>
+    <script type='text/javascript' src='js/jquery.shuffle.js'></script>
+    <script type='text/javascript' src='js/jquery.shuffle.init.js'></script>
+
+    <script type='text/javascript' src='js/extensions/revolution.extension.video.min.js'></script>
+    <script type='text/javascript' src='js/extensions/revolution.extension.slideanims.min.js'></script>
+    <script type='text/javascript' src='js/extensions/revolution.extension.actions.min.js'></script>
+    <script type='text/javascript' src='js/extensions/revolution.extension.layeranimation.min.js'></script>
+    <script type='text/javascript' src='js/extensions/revolution.extension.kenburn.min.js'></script>
+    <script type='text/javascript' src='js/extensions/revolution.extension.navigation.min.js'></script>
+    <script type='text/javascript' src='js/extensions/revolution.extension.migration.min.js'></script>
+    <script type='text/javascript' src='js/extensions/revolution.extension.parallax.min.js'></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                accessibility: true,
+                arrows: true,
+                autoplay: true,
+                prevArrow: $('.tikback'),
+                nextArrow: $('.tiknext'),
+                responsive: [
+    {
+        breakpoint: 1024,
+        settings: {
+            unslick: true
+        }
+    },
+    {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    }
+            ]
+            });
+        });
+        function hover(element) {
+            element.setAttribute('src', 'images/f27.food.');
+        }
+        function unhover(element) {
+            element.setAttribute('src', 'images/f27.food');
+        }
+    </script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 30) {
+                $('#logox').attr('src', 'images/f27.food');
+            } else {
+                $('#logox').attr('src', 'images/f27.food');
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+
+            jQuery('#rev_slider_1_1').show().revolution({
+                dottedOverlay: "twoxtwo",
+                sliderType: "standard",
+                sliderLayout: "fullscreen",
+                dottedOverlay: "none",
+                delay: 5000,
+                navigation: {
+                    keyboardNavigation: "off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    mouseScrollReverse: "default",
+                    onHoverStop: "on",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    }
+                    ,
+                    arrows: {
+                        style: "hebe",
+                        enable: true,
+                        hide_onmobile: true,
+                        hide_under: 600,
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 20,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 20,
+                            v_offset: 0
+                        }
+                    }
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: [1920, 1024, 778, 480],
+                gridheight: [700, 700, 700, 700],
+                lazyType: "none",
+                shadow: 0,
+                spinner: "spinner3",
+                stopLoop: "on",
+                stopAfterLoops: 0,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
+                }
+            });
+        });	/*ready*/
+
+    </script>
+</body>
+</html>
