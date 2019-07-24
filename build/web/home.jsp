@@ -167,40 +167,24 @@
                                             <img width="300" height="300" src="images/ic-pilavli-tavuk-dolmasi.jpg" alt="" />
                                         </div>
                                         <h4 class="cms-grid-title"><b>Fırında İç Pilavlı Tavuk Dolması Tarifi (5 Kişilik)</b> </h4>
-                                        <div class="cms-grid-team-position">
-                                            Detayı Gör
-                                        </div>
-                                    </a>
-                                </div>
-                                <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
-                                    <a href="parmak-kebabi.html">
+              <% for(int i = 0; i < 25; i++) { %>
+                <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
                                         <div class="cms-grid-media has-thumbnail">
                                             <img width="300" height="300" src="images/parmak-kebabi.jpg" alt="" />
                                         </div>
-                                        <h4 class="cms-grid-title"><b>Parmak Kebabı Tarifi (3 Kişilik)</b></h4>
-                                        <div class="cms-grid-team-position">
-                                            Detayı Gör
-                                        </div>
+                                        <h4 class="cms-grid-title"><b>${Recipes.get(i).getTitle()}</b></h4>
+                                                <td>${Recipes.get(i).getContent()}</td>
+
+                                    </a>
+                    </div> 
+
+            <% } %>
                                     </a>
                                 </div>
-                                <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
-                                    <a href="#">
-                                        <div class="cms-grid-media has-thumbnail">
-                                            <img width="300" height="300" src="images/mercan-kebabi.jpg" alt="" />
-                                        </div>
-                                        <h4 class="cms-grid-title"><b>Mercan Kebabı Tarifi (18 Adet)</b> </h4>
-                                        <div class="cms-grid-team-position">Detayı Gör</div>
-                                    </a>
-                                </div>
-                                <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
-                                    <a href="#">
-                                        <div class="cms-grid-media has-thumbnail">
-                                            <img width="300" height="300" src="images/bohca-kebabi-manisa-kebabi.jpg" alt="" />
-                                        </div>
-                                        <h4 class="cms-grid-title"><b> Bohça Kebabı Tarifi (Manisa Kebabı) (5 Kişilik)</b> </h4>
-                                        <div class="cms-grid-team-position">Detayı Gör</div>
-                                    </a>
-                                </div>
+
+
+
                             </div>
                         </div>
                     </div>
@@ -208,177 +192,6 @@
                 </div>
             </div>
 
-            <div id="tatli" class="section pt-2 text-center">
-                <div class="container">
-                    <div class="row">
-                        <div data-wow-delay="0.3s" class="col-sm-12 wow fadeInUp">
-                            <h1>TATLI</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section pt-5 pb-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="cms-grid-wraper cms-grid-blog">
-                                <div class="row cms-grid multiple-items">
-                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
-                                            <img width="370" height="250" src="images/findikli-keskul.jpg" alt="" />
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <a class="icon circle" href="findikli-keskul.html">
-                                                        <i class="fa fa-link"></i>
-                                                    </a>
-                                                    <a class="icon circle prettyphoto" href="images/findikli-keskul.jpg">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="cms-grid-title">
-                                           <b>Fındıklı Keşkül Tarifi (5 Kişilik)</b>
-                                        </h4>
-                                        <div class="cms-grid-link">
-                                            <a class="more-link" href="findikli-keskul.html">Detayı Gör &rarr;</a>
-                                        </div>
-                                    </div>
-                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
-                                            <img width="370" height="250" src="images/hashasli-revani.jpg" alt="" />
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <a class="icon circle" href="#">
-                                                        <i class="fa fa-link"></i>
-                                                    </a>
-                                                    <a class="icon circle prettyphoto" href="images/hashasli-revani.jpg">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="cms-grid-title">
-                                           <b>Haşhaşlı Revani Tatlısı Tarifi (10 Kişilik)</b>
-                                        </h4>
-                                        <div class="cms-grid-link">
-                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
-                                        </div>
-                                    </div>
-                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
-                                            <img width="370" height="250" src="images/pastane-usulu-ekler.jpg" alt="" />
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <a class="icon circle" href="#">
-                                                        <i class="fa fa-link"></i>
-                                                    </a>
-                                                    <a class="icon circle prettyphoto" href="images/pastane-usulu-ekler.jpg">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="cms-grid-title">
-                                            <b>Pastane Usulü Ekler Pasta Tarifi (15 Kişilik)</b>
-                                        </h4>
-                                        <div class="cms-grid-link">
-                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
-                                        </div>
-                                    </div>
-                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
-                                            <img width="370" height="250" src="images/cikolatali-muhallebili-pasta.jpg" alt="" />
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <a class="icon circle" href="#">
-                                                        <i class="fa fa-link"></i>
-                                                    </a>
-                                                    <a class="icon circle prettyphoto" href="images/cikolatali-muhallebili-pasta.jpg">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="cms-grid-title">
-                                            <b>Çikolatalı Muhallebili Pasta Tarifi (10 Kişilik)</b>
-                                        </h4>
-                                        <div class="cms-grid-link">
-                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
-                                        </div>
-                                    </div>
-                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
-                                            <img width="370" height="250" src="images/pastane-usulu-profiterol.jpg" alt="" />
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <a class="icon circle" href="#">
-                                                        <i class="fa fa-link"></i>
-                                                    </a>
-                                                    <a class="icon circle prettyphoto" href="images/pastane-usulu-profiterol.jpg">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="cms-grid-title">
-                                            <a href="#"><b>Pastane Usulü Profiterol Tarifi (10 Kişilik)</b> </a>
-                                        </h4>
-                                        <div class="cms-grid-link">
-                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
-                                        </div>
-                                    </div>
-                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
-                                            <img width="370" height="250" src="images/gelin-pastasi.jpg" alt="" />
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <a class="icon circle" href="#">
-                                                        <i class="fa fa-link"></i>
-                                                    </a>
-                                                    <a class="icon circle prettyphoto" href="images/gelin-pastasi.jpg">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="cms-grid-title">
-                                            <a href="#"><b>Gelin Pastası Tarifi (8 Kişilik)</b></a>
-                                        </h4>
-                                        <div class="cms-grid-link">
-                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
-                                        </div>
-                                    </div>
-                                    <div data-wow-delay="0.3s" class="text-center cms-grid-item col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-                                        <div class="cms-grid-media overlay-wrap has-thumbnail">
-                                            <img width="370" height="250" src="images/magnolia.jpg" alt="" />
-                                            <div class="overlay">
-                                                <div class="overlay-content">
-                                                    <a class="icon circle" href="#">
-                                                        <i class="fa fa-link"></i>
-                                                    </a>
-                                                    <a class="icon circle prettyphoto" href="images/magnolia.jpg">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="cms-grid-title">
-                                            <a href="#"><b>Magnolia Tarifi (6 Kişilik)</b> </a>
-                                        </h4>
-                                        <div class="cms-grid-link">
-                                            <a class="more-link" href="#">Detayı Gör &rarr;</a>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
         <!-- #main -->
         <footer id="footer-wrapper" class="footer-bottom-layout-1">
             <div id="cms-footer-bottom" class="layout-1">

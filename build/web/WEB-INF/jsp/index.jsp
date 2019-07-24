@@ -3,14 +3,14 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
     <title>LOGIN</title>
     </head>
     <body>
-    <center> <h1><u> Please Login Guru</u></h1> </center> 
+    <center> <h1><u> Please Login Guru7</u></h1> </center> 
     <center>
         <div>
-            <form action="login" method="POST">
+            <form action="login" method="GET">
                 <table>
                     <tr>
                         <td>UserName</td>
@@ -26,6 +26,7 @@
                     
                 </table>                 
             </form>
+
             <form action="signUser.jsp" method="POST">
                 <tr>
                     <td colspan="2" style="text-align: left"><input class="btn btn-success" type="submit" value="Sign Up Guru!"</td>
@@ -35,5 +36,6 @@
 
         </div>
     </center>
+    
     </body>
 </html>

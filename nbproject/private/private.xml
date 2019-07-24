@@ -2,15 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/home/user/NetBeansProjects/GuruRecipes/web/redirect.jsp</file>
-            <file>file:/home/user/NetBeansProjects/GuruRecipes/web/WEB-INF/jsp/index.jsp</file>
-            <file>file:/home/user/NetBeansProjects/GuruRecipes/src/java/addRecipe.java</file>
-            <file>file:/home/user/NetBeansProjects/GuruRecipes/web/home.jsp</file>
-            <file>file:/home/user/NetBeansProjects/GuruRecipes/src/java/DBLayer.java</file>
-            <file>file:/home/user/NetBeansProjects/GuruRecipes/web/WEB-INF/addUserAgain.jsp</file>
-            <file>file:/home/user/NetBeansProjects/GuruRecipes/web/addRecipe.jsp</file>
-            <file>file:/home/user/NetBeansProjects/GuruRecipes/web/signUser.jsp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

@@ -6,6 +6,7 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.LinkedList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,17 +19,21 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(urlPatterns = {"/login"})
 public class login extends HttpServlet {
-
+    static String _username;
+    static String _password;
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String _username =request.getParameter("username");
-            String _password =request.getParameter("password");
+            _username =request.getParameter("username");
+            _password =request.getParameter("password");
             if(_username != null && _password != null){
                 DBLayer l = new DBLayer();
                 if(l.loginUser(_username, _password)){
-                    response.sendRedirect("home.jsp");
+                    DBLayer dblayer = new DBLayer();
+                    //LinkedList list = dblayer.getRecipe();
+                    request.setAttribute("Recipes", dblayer.getRecipe());
+                    request.getRequestDispatcher("/home.jsp").forward(request, response);
                 }else
                     response.sendRedirect("loginAgain.jsp");
             }else
